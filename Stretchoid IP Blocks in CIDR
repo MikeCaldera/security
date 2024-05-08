@@ -17,7 +17,7 @@ Here's a more detailed breakdown of the coverage for each range, which shows the
     Adjust Precision as Needed: If finer control is necessary, consider using more specific CIDR blocks or combining CIDR blocking with explicit allow rules for exceptions.
 
 
-for adding to pfsense aliases. We need to shortee the long list down to CIDR. Taking up way too much resources for a constant bad actor.
+for adding to pfsense aliases. We need to shorten the long list down to CIDR. Taking up way too much resources for a constant bad actor.
 
 104.131.128.0/19 This block covers every IP address from 104.131.128.0 to 104.131.159.255. All IPs within the range 104.131.128.X and 104.131.144.X are included
 107.170.192.0/18 This block covers from 107.170.192.0 to 107.170.223.255. It includes all IPs within the range 107.170.192.X to 107.170.208.X
