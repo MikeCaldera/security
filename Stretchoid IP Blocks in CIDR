@@ -1,0 +1,29 @@
+The proposed CIDR blocks cover a wide range of IP addresses, but they may include additional addresses that are not part of the specific IPs. This approach provides a broader coverage, which is easier to manage but less precise. 
+It’s essential to confirm that the wider ranges do not inadvertently block IPs outside of the intended list.
+
+Here's a more detailed breakdown of the coverage for each range, which shows they encapsulate the specific IPs:
+
+    104.131.128.0/19 – This block covers every IP address from 104.131.128.0 to 104.131.159.255. All IPs within the range 104.131.128.X and 104.131.144.X are included.
+    107.170.192.0/18 – This block covers from 107.170.192.0 to 107.170.223.255. It includes all IPs within the range 107.170.192.X to 107.170.208.X.
+    138.68.208.0/20 – Covers all IPs from 138.68.208.0 to 138.68.223.255, perfectly encapsulating the range 138.68.208.X.
+    159.203.192.0/18 – Includes IPs from 159.203.192.0 to 159.203.223.255, covering all listed IPs starting with 159.203.192.X and 159.203.208.X.
+    162.243.128.0/17 – Encompasses every IP from 162.243.128.0 to 162.243.255.255, ensuring all your 162.243.128.X to 162.243.145.X IPs are covered.
+    192.241.192.0/18 – Covers IPs from 192.241.192.0 to 192.241.223.255, which includes all your listed IPs from 192.241.192.X through 192.241.236.X.
+    198.199.100.0/18 – This block covers from 198.199.100.0 to 198.199.127.255, encompassing all IPs from 198.199.100.X to 198.199.117.X.
+    45.55.0.0/19 – This range from 45.55.0.0 to 45.55.31.255 includes the IPs starting with 45.55.0.X.
+
+
+    Verify Unintended Coverage: Check if there are any IPs within these blocks that should not be blocked.
+    Adjust Precision as Needed: If finer control is necessary, consider using more specific CIDR blocks or combining CIDR blocking with explicit allow rules for exceptions.
+
+
+for adding to pfsense aliases. We need to shortee the long list down to CIDR. Taking up way too much resources for a constant bad actor.
+
+104.131.128.0/19 This block covers every IP address from 104.131.128.0 to 104.131.159.255. All IPs within the range 104.131.128.X and 104.131.144.X are included
+107.170.192.0/18 This block covers from 107.170.192.0 to 107.170.223.255. It includes all IPs within the range 107.170.192.X to 107.170.208.X
+138.68.208.0/20 Covers all IPs from 138.68.208.0 to 138.68.223.255, perfectly encapsulating the range 138.68.208.X.
+159.203.192.0/18 Includes IPs from 159.203.192.0 to 159.203.223.255, covering all listed IPs starting with 159.203.192.X and 159.203.208.X
+162.243.128.0/17 Encompasses every IP from 162.243.128.0 to 162.243.255.255, ensuring all your 162.243.128.X to 162.243.145.X IPs are covered.
+192.241.192.0/18 Covers IPs from 192.241.192.0 to 192.241.223.255, which includes all your listed IPs from 192.241.192.X through 192.241.236.X.
+198.199.100.0/18 This block covers from 198.199.100.0 to 198.199.127.255, encompassing all IPs from 198.199.100.X to 198.199.117.X.
+45.55.0.0/19 This range from 45.55.0.0 to 45.55.31.255 includes the IPs starting with 45.55.0.X.
