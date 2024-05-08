@@ -1,6 +1,7 @@
 # Datacenters Network security toolkit
 
 - `stretchoid.txt` (List of all known stretchoid IPs)
+- `Stretchoid IP Blocks in CIDR.txt` (List of all known stretchoid IPs in CIDR format for pfSense)
 - `binaryedge.txt` (List of all known binaryedge IPs)
 - `censys-scanner.txt` (List of all IPs declared by censys scanner on their FAQ)
 - `scanners/internet-measurement.com.txt` (List of all IPs declared by internet-measurement.com on [their website](https://internet-measurement.com/#ips))
